@@ -1,0 +1,17 @@
+
+.container  {
+    margin-bottom: 3em;
+}
+
+.container h1 {
+    margin-bottom: .5em;
+}
+
+.works {
+    max-width: 900px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    flex-flow: row wrap;
+}

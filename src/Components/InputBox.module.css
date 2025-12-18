@@ -1,0 +1,22 @@
+.div {
+
+}
+
+.div input {
+    width: 90%;
+    padding: 3px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .6s;
+    outline: none;
+}
+
+/* .div input:hover,
+.div input:valid {
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+/* .div input:invalid {
+    border: 1px solid red;
+} */

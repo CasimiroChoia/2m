@@ -1,0 +1,70 @@
+.form {
+  background-color: aliceblue;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form input {
+  padding: 3px;
+  margin-block: 0.4em;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.container {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  /* background-color: antiquewhite; */
+  width: clamp(300px, 60dvw, 900px);
+  min-height: 300px;
+}
+
+.panel > div {
+  padding: 10px;
+  background-color: antiquewhite;
+  margin: 1em auto;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  box-shadow: 0 0 5px .4px black;
+}
+
+.panel h2 {
+  margin-top: 1em;
+  margin-bottom: -0.7em;
+  /* text-align: left; */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.panel > div > * {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+
+.lidas > div > *,
+.naoLidas > div > * {
+  text-align: left;
+  line-height: normal;
+}
+
+.message {
+  font-size: 0.8em;
+}
+
+.reactions button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: gray;
+  }
+

@@ -1,0 +1,59 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.mockups {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.mock {
+  flex-basis: 290px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1px;
+  display: flex;
+  margin: 4px auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & figure:hover img {
+    transition: all 0.8s;
+    transform: scale(1.3);
+  }
+}
+
+.mock figure {
+  box-shadow: 0 0 2.5px black;
+  margin: 1px;
+  width: fit-content;
+  overflow: hidden;
+  width: 200px;
+  height: 160px;
+  border-radius: 20px;
+}
+
+.mock img {
+  transition: all 0.5s 0.3s ease-in-out;
+  width: 200px;
+  height: 160px;
+  /* border: 1px solid; */
+  border: none;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.section {
+  margin: 1.8em auto;
+}
+
+.section h2 {
+  margin: 2em 0 0.3em;
+  text-indent: 1cm;
+  text-align: left;
+}

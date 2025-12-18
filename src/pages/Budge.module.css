@@ -1,0 +1,83 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.container tr:has(.multipla) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.container tr {
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  background-color: #cecece;
+  /* border: 10px solid #000; */
+}
+
+.container section {
+  border: 1px solid black;
+  width: fit-content;
+  margin: 2em auto;
+  border-radius: 30px 0 0 30px;
+  overflow: hidden;
+}
+
+.container tr td:nth-child(n + 2) {
+  border-bottom: 3px solid beige;
+  display: block;
+  background-color: darkblue;
+  padding: 3px 3px;
+  border-radius: 15px 0 0 0;
+  color: rgb(204, 204, 204);
+}
+
+.container table {
+  min-width: 320px;
+  border-spacing: 0;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.container table thead {
+  border-bottom: 3px solid black;
+}
+
+.vertical {
+  writing-mode: sideways-lr;
+  padding: 5px;
+  border-right: 1px solid #000;
+  margin-left: 2px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.6em;
+}
+
+.multi:nth-child(n + 2) {
+  display: block;
+}
+
+.small {
+  font-size: 0.6em;
+  color: #0056ff;
+
+  &:not(.symbol)::before {
+    content: "( ";
+  }
+
+  &:not(.symbol)::after {
+    content: " )";
+  }
+}
+
+/* .multipla {
+  display: block;
+  background-color: darkblue;
+  padding: 3px 3px;
+  border-radius: 15px 0 0 0 ;
+  color: rgb(204, 204, 204);
+} */
+
+.nome {
+  font-weight: 900;
+}

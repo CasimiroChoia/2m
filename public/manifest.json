@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "2M",
+  "name": "2M Produções",
+  "desc":"Venha tornar a sua ideia em realidade com a 2M Produções",
   "icons": [
     {
       "src": "favicon.ico",

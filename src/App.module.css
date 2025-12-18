@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo {
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+}

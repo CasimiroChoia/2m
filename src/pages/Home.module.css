@@ -1,0 +1,99 @@
+@keyframes appear {
+  0% {
+    transform: translateY(30px) scale(1);
+    opacity: 0;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding-inline: 10px;
+}
+
+.banner {
+  background-image: url("../assets/img/Frente\ 3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  /* background-color: rgb(32, 32, 32); */
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  min-width: 200px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.back {
+  padding: 20px;
+  padding-top: 3em;
+  color: aliceblue;
+  height: inherit;
+  min-width: inherit;
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.iconCard {
+  max-width: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 3px 5px;
+  background-color: white;
+}
+
+.iconCard img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.serviceCard {
+  max-width: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 3px 5px;
+  background-color: white;
+}
+
+.serviceCard * {
+  text-align: left;
+  margin-bottom: 0.4em;
+}
+
+.serviceCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  animation: appear .8s ease-in-out 0s 1 backwards;
+}
+/*
+.card:nth-child(2) {
+  animation: appear 3.3s ease-in-out 3.3s 1 backwards;
+}
+.card:nth-child(3) {
+  animation: appear 3.3s ease-in-out 6.3s 1 backwards;
+}
+.card:nth-child(4) {
+  animation: appear 3.3s ease-in-out 9.3s 1 backwards;
+}
+.card:nth-child(5) {
+  animation: appear 3.3s ease-in-out 12.3s 1 backwards;
+}
+.card:nth-child(6) {
+  animation: appear 3.3s ease-in-out 15.3s 1 backwards;
+} */
+
+@media (max-width: 450px) {
+  .banner {
+    background-image: url("../assets/img/Frente\ 1.jpg");
+  }
+}
