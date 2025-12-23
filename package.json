@@ -1,7 +1,7 @@
 {
   "name": "2m",
   "version": "0.1.0",
-  "homepage": "https://casimirochoia.github.io",
+  "homepage": "https://casimirochoia.github.io/2m",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
