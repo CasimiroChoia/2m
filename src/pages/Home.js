@@ -1,4 +1,4 @@
-import Header from "../Components/Header";
+﻿import Header from "../Components/Header";
 import Button from "../Components/Button";
 import style from "./Home.module.css";
 import Footer from "../Components/Footer";
@@ -114,9 +114,9 @@ export default function Home() {
 
           <Button
             text="Tabela de Preços"
-            // href="/budge#container"
+            // href="/2m/budge#container"
             onClick={() =>
-              navigate("/budge#container", {
+              navigate("/2m/budge#container", {
                 flushSync: true,
                 preventScrollReset: false,
                 viewTransition: false,

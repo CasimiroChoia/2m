@@ -33,7 +33,7 @@ export default function Header(props) {
         style={{ left: isHide ? -100 + "dvh" : 0 }}
       >
         <NavLink
-          to="/home"
+          to="/2m/home"
           className={({ isActive }) =>
             isActive ? `${styles.isActive} ${styles.link}` : styles.link
           }
@@ -41,7 +41,7 @@ export default function Header(props) {
           Casa
         </NavLink>
         <NavLink
-          to="/services"
+          to="/2m/services"
           className={({ isActive }) =>
             isActive ? `${styles.isActive} ${styles.link}` : styles.link
           }
@@ -49,7 +49,7 @@ export default function Header(props) {
           Servicos
         </NavLink>
         <NavLink
-          to="/works"
+          to="/2m/works"
           className={({ isActive }) =>
             isActive ? `${styles.isActive} ${styles.link}` : styles.link
           }
@@ -57,7 +57,7 @@ export default function Header(props) {
           Nosso Trabalho
         </NavLink>
         <NavLink
-          to="/contact"
+          to="/2m/contact"
           className={({ isActive }) =>
             isActive ? `${styles.isActive} ${styles.link}` : styles.link
           }
@@ -65,7 +65,7 @@ export default function Header(props) {
           Contacto
         </NavLink>
         <NavLink
-          to="/budge"
+          to="/2m/budge"
           className={({ isActive }) =>
             isActive
               ? `${styles.isActive} ${styles.link} ${styles.button}`

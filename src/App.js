@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 function App() {
   const navigate = useNavigate()
-  setTimeout(() => navigate("/home", { replace: true, viewTransition: true }), 2 * 1000);
+  setTimeout(() => navigate("/2m/home", { replace: true, viewTransition: true }), 2 * 1000);
   return (
     <div className={style.App}>
       <img

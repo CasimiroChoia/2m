@@ -20,15 +20,14 @@ root.render(
     {/* <App /> */}
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />} />
         <Route path='/2m' element={<App />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/works' element={<Works />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/budge' element={<Budge />} />
-        <Route path='/panel' element={<Panel />} />
-        <Route path='*' element={<NotFound/>} />
+        <Route path='/2m/home' element={<Home />} />
+        <Route path='/2m/services' element={<Services />} />
+        <Route path='/2m/works' element={<Works />} />
+        <Route path='/2m/contact' element={<Contact />} />
+        <Route path='/2m/budge' element={<Budge />} />
+        <Route path='/2m/panel' element={<Panel />} />
+        <Route path='/2m/*' element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
