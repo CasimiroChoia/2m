@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2m/static/css/main.06623c57.css",
-    "main.js": "/2m/static/js/main.45b44785.js",
+    "main.css": "/2m/static/css/main.f196ba62.css",
+    "main.js": "/2m/static/js/main.45d91501.js",
     "static/js/488.d31d8b83.chunk.js": "/2m/static/js/488.d31d8b83.chunk.js",
     "static/media/logo.png": "/2m/static/media/logo.8d8fa0ba8557a4c3533a.png",
     "static/media/paulo flores venda de ingressos 07-07-24.jpg": "/2m/static/media/paulo flores venda de ingressos 07-07-24.995e594b9f8c397adbb9.jpg",
@@ -40,12 +40,12 @@
     "static/media/006-instagram-1.png": "/2m/static/media/006-instagram-1.15d77dca0ebcbb9aa0d5.png",
     "static/media/004-facebook-1.png": "/2m/static/media/004-facebook-1.a5def58db1e9c1b38269.png",
     "index.html": "/2m/index.html",
-    "main.06623c57.css.map": "/2m/static/css/main.06623c57.css.map",
-    "main.45b44785.js.map": "/2m/static/js/main.45b44785.js.map",
+    "main.f196ba62.css.map": "/2m/static/css/main.f196ba62.css.map",
+    "main.45d91501.js.map": "/2m/static/js/main.45d91501.js.map",
     "488.d31d8b83.chunk.js.map": "/2m/static/js/488.d31d8b83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06623c57.css",
-    "static/js/main.45b44785.js"
+    "static/css/main.f196ba62.css",
+    "static/js/main.45d91501.js"
   ]
 }
