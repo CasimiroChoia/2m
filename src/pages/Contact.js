@@ -1,4 +1,4 @@
-import Button from "../Components/Button";
+﻿import Button from "../Components/Button";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import InputBox from "../Components/InputBox";
@@ -6,7 +6,7 @@ import style from "./Contact.module.css";
 import whatsapp from "../assets/img/002-whatsapp-1.png";
 import facebook from "../assets/img/004-facebook-1.png";
 import instagram from "../assets/img/006-instagram-1.png";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Contact() {
@@ -34,6 +34,9 @@ export default function Contact() {
             e.preventDefault();
             setTimeout(() => {
               alert("O seu Formulário foi enviado com Sucesso Sr. " + name);
+	      setMessage("")
+	      setName("")
+	      setPhone("")
             }, 3 * 1000);
           }}
         >

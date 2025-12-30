@@ -82,7 +82,7 @@ export default function Panel() {
       ) : (
         <div>
           <h1>Mensagens</h1>
-          <Button text="voltar" href="/"/>
+          <Button text="voltar" href="/2m"/>
           <div className={style.panel}>
             {messages.some((sms) => sms.readed === false) && (
               <>

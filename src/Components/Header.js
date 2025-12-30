@@ -1,7 +1,7 @@
-﻿import { NavLink, useNavigate } from "react-router-dom";
-import styles from "./Header.module.css";
+﻿import styles from "./Header.module.css";
 import Logo from "../assets/img/logo.png";
 import { useState, useRef } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Header(props) {
   const [isHide, setIsHide] = useState(true);
