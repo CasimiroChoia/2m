@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+﻿import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import Logo from "../assets/img/logo.png";
 import { useState, useRef } from "react";
@@ -11,7 +11,7 @@ export default function Header(props) {
   const goToPanel = () => {
     setCount((prev) => prev + 1);
     if (count >= 5) {
-      navigate("/panel", { viewTransition: true });
+      navigate("/2m/panel", { viewTransition: true });
     }
   };
   return (

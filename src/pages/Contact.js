@@ -11,9 +11,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const navigate = useNavigate();
-  // const [name, setName] = useState("");
-  // const [phone, setPhone] = useState("");
-  // const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     document.title = "2M Produções | Contacte Nos";
@@ -28,16 +28,28 @@ export default function Contact() {
           Estamos prontos para ajudar. Preencha o formulário abaixo ou utilize
           um de nossos canais de atendimento
         </p>
-        <form className={style.form}>
+        <form
+          className={style.form}
+          onSubmit={(e) => {
+            e.preventDefault();
+            setTimeout(() => {
+              alert("O seu Formulário foi enviado com Sucesso Sr. " + name);
+            }, 3 * 1000);
+          }}
+        >
           <h3>Envie sua mensagem</h3>
           <InputBox
             name="name"
+            value={name}
+            setValue={setName}
             label="Nome"
             type="text"
             placeholder="Digite seu Nome"
           />
           <InputBox
             name="phone"
+            value={phone}
+            setValue={setPhone}
             label="Telefone"
             type="number"
             placeholder="Digite o seu Telefone"
@@ -50,6 +62,9 @@ export default function Contact() {
             className={style.textArea}
             minLength="10"
             name="message"
+            value={message}
+            onInput={(e) => setMessage(e.target.value)}
+            set
             required
           ></textarea>
           <Button text="enviar" onClick={() => {}} />
@@ -59,41 +74,60 @@ export default function Contact() {
           {/* Seccão dos contactos */}
           <section className={`${style.section} ${style.contacts}`}>
             <h3>Nossos Contatos</h3>
-            <Link className={style.link} to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8" target="_blank">
+            <Link
+              className={style.link}
+              to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"
+              target="_blank"
+            >
               <div>
                 <img
                   src={facebook}
                   alt="icon do facebook"
-                  onClick={() => navigate("https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8")}
+                  onClick={() =>
+                    navigate(
+                      "https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"
+                    )
+                  }
                 />
                 <span>
                   <h4>Facebook</h4>
                   <p>
                     {/* <a target="_blank" href="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"> */}
-                      2m.produções
+                    2m.produções
                     {/* </a> */}
                   </p>
                 </span>
               </div>
             </Link>
-            <Link className={style.link} to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8">
+            <Link
+              className={style.link}
+              to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"
+            >
               <div>
                 <img
                   src={instagram}
                   alt="icon do instagram"
-                  onClick={() => navigate("https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8")}
+                  onClick={() =>
+                    navigate(
+                      "https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"
+                    )
+                  }
                 />
                 <span>
                   <h4>Instagram</h4>
                   <p>
                     {/* <a target="_blank" href="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"> */}
-                      2m.produções
+                    2m.produções
                     {/* </a> */}
                   </p>
                 </span>
               </div>
             </Link>
-            <Link className={style.link} to="https://wa.me/244923709909" target="_blank">
+            <Link
+              className={style.link}
+              to="https://wa.me/244923709909"
+              target="_blank"
+            >
               <div>
                 <img
                   src={whatsapp}
@@ -104,7 +138,7 @@ export default function Contact() {
                   <h4>Whatsapp</h4>
                   <p>
                     {/* <a target="_blank" href="https://wa.me/244923709909"> */}
-                      923 709 909
+                    923 709 909
                     {/* </a> */}
                   </p>
                 </span>
