@@ -10,3 +10,17 @@
     letter-spacing: 1px;
     background-color: lightblue;
 }
+
+.LinkButton {
+    padding: 0.35rem 1.5rem;
+    margin: 1rem auto;
+    width:fit-content;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: lightblue;
+}

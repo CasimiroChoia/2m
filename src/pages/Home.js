@@ -30,7 +30,7 @@ export default function Home() {
             <Button
               text="conheça nossos serviços"
               onClick={() =>
-                navigate("/services", { relative: true, viewTransition: true })
+                navigate("/2m/services", { relative: true, viewTransition: true })
               }
             />
           </span>

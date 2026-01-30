@@ -9,10 +9,8 @@ export default function Button({ text, onClick, href }) {
           {text}
         </button>
       ) : (
-        <Link to={href} preventScrollReset={true} >
-          <button className={style.button} onClick={(e) =>{}}>
+        <Link className={style.LinkButton} to={href} preventScrollReset={true} >
             {text}
-          </button>
         </Link>
       )}
     </>

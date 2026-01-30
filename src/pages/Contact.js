@@ -14,6 +14,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const email = "2mproducoes.ao@gmail.com"
 
   useEffect(() => {
     document.title = "2M Produções | Contacte Nos";
@@ -32,12 +33,15 @@ export default function Contact() {
           className={style.form}
           onSubmit={(e) => {
             e.preventDefault();
-            setTimeout(() => {
+            /*
+              setTimeout(() => {
               alert("O seu Formulário foi enviado com Sucesso Sr. " + name);
 	      setMessage("")
 	      setName("")
 	      setPhone("")
             }, 3 * 1000);
+
+            */
           }}
         >
           <h3>Envie sua mensagem</h3>
@@ -63,14 +67,15 @@ export default function Contact() {
           <textarea
             id="message"
             className={style.textArea}
-            minLength="10"
+            minLength="1"
             name="message"
             value={message}
             onInput={(e) => setMessage(e.target.value)}
-            set
+    
             required
           ></textarea>
-          <Button text="enviar" onClick={() => {}} />
+
+          <Button text="enviar" href={`mailto:${email}?subject=${"Email de "+name+" Vinda Do Site"}&body=${message}`} />
         </form>
 
         <div className={style.secondDiv}>
@@ -79,7 +84,7 @@ export default function Contact() {
             <h3>Nossos Contatos</h3>
             <Link
               className={style.link}
-              to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"
+              to="https://www.facebook.com/2mproducoes.ao"
               target="_blank"
             >
               <div>
@@ -88,14 +93,14 @@ export default function Contact() {
                   alt="icon do facebook"
                   onClick={() =>
                     navigate(
-                      "https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"
+                      "https://www.facebook.com/2mproducoes.ao"
                     )
                   }
                 />
                 <span>
                   <h4>Facebook</h4>
                   <p>
-                    {/* <a target="_blank" href="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Facebook&oq=2M+Produ%C3%A7%C3%B5es+Facebook&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjE4OTU2ajBqMTWoAgiwAgHxBbT26Kg_dpPL&sourceid=chrome&ie=UTF-8"> */}
+                    {/* <a target="_blank" href="https://www.facebook.com/2mproducoes.ao"> */}
                     2m.produções
                     {/* </a> */}
                   </p>
@@ -104,7 +109,7 @@ export default function Contact() {
             </Link>
             <Link
               className={style.link}
-              to="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"
+              to="https://www.instagram.com/2mproducoes.ao"
             >
               <div>
                 <img
@@ -112,14 +117,14 @@ export default function Contact() {
                   alt="icon do instagram"
                   onClick={() =>
                     navigate(
-                      "https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"
+                      "https://www.instagram.com/2mproducoes.ao"
                     )
                   }
                 />
                 <span>
                   <h4>Instagram</h4>
                   <p>
-                    {/* <a target="_blank" href="https://www.google.com/search?q=2M+Produ%C3%A7%C3%B5es+Instagram&oq=2M+Produ%C3%A7%C3%B5es+Instagram&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCzE0Nzk0OWowajE1qAIIsAIB8QW09uioP3aTyw&sourceid=chrome&ie=UTF-8"> */}
+                    {/* <a target="_blank" href="https://www.instagram.com/2mproducoes.ao"> */}
                     2m.produções
                     {/* </a> */}
                   </p>
@@ -128,20 +133,20 @@ export default function Contact() {
             </Link>
             <Link
               className={style.link}
-              to="https://wa.me/244923709909"
+              to="https://wa.me/244931075838"
               target="_blank"
             >
               <div>
                 <img
                   src={whatsapp}
                   alt="icon do whatsapp"
-                  onClick={() => navigate("https://wa.me/244923709909")}
+                  onClick={() => navigate("https://wa.me/244931075838")}
                 />
                 <span>
                   <h4>Whatsapp</h4>
                   <p>
-                    {/* <a target="_blank" href="https://wa.me/244923709909"> */}
-                    923 709 909
+                    {/* <a target="_blank" href="https://wa.me/244931075838"> */}
+                    931 075 838
                     {/* </a> */}
                   </p>
                 </span>

@@ -1,4 +1,4 @@
-import style from "./Footer.module.css";
+﻿import style from "./Footer.module.css";
 import Logo from "../assets/img/logo.png";
 
 export default function Footer() {
@@ -19,14 +19,14 @@ export default function Footer() {
           <ul type="none">
             <li>
               Instagram:{" "}
-              <a href="https://www.instagram.com/2mproducoes.ao/">@2m.produções</a>
+              <a title="Acesse ao no instagram" href="https://www.instagram.com/2mproducoes.ao/">@2m.produções</a>
             </li>
             <li>
-              Telefone: <a href="tel:+244923709909">(244) 923 709 909</a>
+              Telefone: <a title="Contacte nos por telemovel" href="tel:+244931075838">(244) 931 075 838</a>
             </li>
             <li>
               Whatsapp:{" "}
-              <a href="https://wa.me/244923709909">(244) 923 709 909</a>
+              <a title="Contacte nos pelo WhatsApp" href="https://wa.me/244931075838">(244) 931 075 838</a>
             </li>
           </ul>
         </section>

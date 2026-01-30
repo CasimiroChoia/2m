@@ -81,3 +81,12 @@
 .nome {
   font-weight: 900;
 }
+
+
+.logo {
+  min-width:300px;
+  width:100%;
+  max-width:400px;
+  padding:10px;
+  border-radius:10px;
+}
