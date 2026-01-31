@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/2m/static/css/main.f196ba62.css",
-    "main.js": "/2m/static/js/main.f3b05626.js",
+    "main.css": "/2m/static/css/main.41e978b5.css",
+    "main.js": "/2m/static/js/main.8b0d1990.js",
     "static/js/488.d31d8b83.chunk.js": "/2m/static/js/488.d31d8b83.chunk.js",
-    "static/media/logo.png": "/2m/static/media/logo.8d8fa0ba8557a4c3533a.png",
     "static/media/paulo flores venda de ingressos 07-07-24.jpg": "/2m/static/media/paulo flores venda de ingressos 07-07-24.995e594b9f8c397adbb9.jpg",
     "static/media/pro2da maratona namibe 27-07-25.jpg": "/2m/static/media/pro2da maratona namibe 27-07-25.0a8d96abba1f04c4a057.jpg",
     "static/media/tour paulo flores em Angola 07-07-24.jpg": "/2m/static/media/tour paulo flores em Angola 07-07-24.ecce92fd98e5494a6716.jpg",
@@ -12,6 +11,7 @@
     "static/media/banner2.jpg": "/2m/static/media/banner2.f42137e97fa91ba4eeae.jpg",
     "static/media/Roboto-Medium.ttf": "/2m/static/media/Roboto-Medium.d2d7f0c01bffaa5ec8f7.ttf",
     "static/media/Frente 3.jpg": "/2m/static/media/Frente 3.dec8e3625ca650f7c14d.jpg",
+    "static/media/logo.png": "/2m/static/media/logo.e3e0d305c7959cddb5da.png",
     "static/media/reveillon das tintas.jpg": "/2m/static/media/reveillon das tintas.47b83d193c667658077f.jpg",
     "static/media/Frente 1.jpg": "/2m/static/media/Frente 1.4f6dbc1f1aec7b475dd2.jpg",
     "static/media/banner6.jpg": "/2m/static/media/banner6.4afdbfdf2735ace640b8.jpg",
@@ -28,6 +28,7 @@
     "static/media/001-visitCard.jpg": "/2m/static/media/001-visitCard.ba62bb628fec0eecf427.jpg",
     "static/media/005-roll.jpg": "/2m/static/media/005-roll.3fa1e09339cfc182abba.jpg",
     "static/media/003-visitCard.jpg": "/2m/static/media/003-visitCard.446616c36a8f6b930d11.jpg",
+    "static/media/tabela.png": "/2m/static/media/tabela.1daa80775f7cc63af67d.png",
     "static/media/002-roll.jpg": "/2m/static/media/002-roll.8e73e9c4c64573a75cd0.jpg",
     "static/media/005-visitCard.jpg": "/2m/static/media/005-visitCard.ba14497ec0c0398ae53b.jpg",
     "static/media/banner4.jpg": "/2m/static/media/banner4.63108af1052ace066c31.jpg",
@@ -40,12 +41,12 @@
     "static/media/006-instagram-1.png": "/2m/static/media/006-instagram-1.15d77dca0ebcbb9aa0d5.png",
     "static/media/004-facebook-1.png": "/2m/static/media/004-facebook-1.a5def58db1e9c1b38269.png",
     "index.html": "/2m/index.html",
-    "main.f196ba62.css.map": "/2m/static/css/main.f196ba62.css.map",
-    "main.f3b05626.js.map": "/2m/static/js/main.f3b05626.js.map",
+    "main.41e978b5.css.map": "/2m/static/css/main.41e978b5.css.map",
+    "main.8b0d1990.js.map": "/2m/static/js/main.8b0d1990.js.map",
     "488.d31d8b83.chunk.js.map": "/2m/static/js/488.d31d8b83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f196ba62.css",
-    "static/js/main.f3b05626.js"
+    "static/css/main.41e978b5.css",
+    "static/js/main.8b0d1990.js"
   ]
 }
