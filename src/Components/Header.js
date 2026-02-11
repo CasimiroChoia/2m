@@ -1,5 +1,5 @@
 ﻿import styles from "./Header.module.css";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/logo branco.png";
 import { useState, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 

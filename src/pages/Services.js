@@ -12,19 +12,41 @@ import {
   visitCard1,
   visitCard2,
   visitCard3,
-  visitCard4,
-  visitCard5,
-  visitCard6,
   roll1,
   roll2,
   roll3,
   roll4,
   roll5,
   roll6,
+  timbre1,
+  timbre2,
+  timbre3,
 } from "../Components/Constants";
 import { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
-// import Image from "../assets/img/aaa.png";
+
+const Timbragens = [
+  {
+    id: 1,
+    image: timbre1 || "logo192.png",
+    title: "Timbragem",
+    by: "casimiro",
+    description: "descricao do design",
+  },
+  {
+    id: 2,
+    image: timbre2 || "logo192.png",
+    title: "Timbragem",
+    by: "casimiro",
+    description: "descricao do design",
+  },
+  {
+    id: 3,
+    image: timbre3 || "logo192.png",
+    title: "Timbragem",
+    by: "casimiro",
+    description: "descricao do design",
+  },
+];
 
 const Cards = [
   {
@@ -44,27 +66,6 @@ const Cards = [
   {
     id: 3,
     image: visitCard3 || "logo192.png",
-    title: "cartão de visita",
-    by: "casimiro",
-    description: "descricao do design",
-  },
-  {
-    id: 4,
-    image: visitCard4 || "logo192.png",
-    title: "cartão de visita",
-    by: "casimiro",
-    description: "descricao do design",
-  },
-  {
-    id: 5,
-    image: visitCard5 || "logo192.png",
-    title: "cartão de visita",
-    by: "casimiro",
-    description: "descricao do design",
-  },
-  {
-    id: 6,
-    image: visitCard6 || "logo192.png",
     title: "cartão de visita",
     by: "casimiro",
     description: "descricao do design",
@@ -178,7 +179,23 @@ export default function Services() {
         <section className={style.section}>
           <h2>Cartões de visita</h2>
           <div className={style.mockups}>
-            {Cards.map((mockup) => {
+            {Cards.slice(0, 3).map((mockup) => {
+              return (
+                <div key={Math.random()} className={style.mock}>
+                  <figure>
+                    <img src={mockup.image} alt="aaa" />
+                  </figure>
+                  {/* <h3>{mockup.title}</h3> */}
+                  {/* <p>{mockup.description}</p> */}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        <section className={style.section}>
+          <h2>Timbragens</h2>
+          <div className={style.mockups}>
+            {Timbragens.slice(0, 3).map((mockup) => {
               return (
                 <div key={Math.random()} className={style.mock}>
                   <figure>
@@ -194,7 +211,7 @@ export default function Services() {
         <section className={style.section}>
           <h2>Banners</h2>
           <div className={style.mockups}>
-            {Banners.map((mockup) => {
+            {Banners.slice(0, 3).map((mockup) => {
               return (
                 <div key={Math.random()} className={style.mock}>
                   <figure>
@@ -210,7 +227,7 @@ export default function Services() {
         <section className={style.section}>
           <h2>Roll Up</h2>
           <div className={style.mockups}>
-            {rolls.map((mockup) => {
+            {rolls.slice(0, 3).map((mockup) => {
               return (
                 <div key={Math.random()} className={style.mock}>
                   <figure>

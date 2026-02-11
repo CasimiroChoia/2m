@@ -69,6 +69,27 @@ export default function Works() {
       year: "2025",
       fundo: "white",
     },
+    {
+      event: "Reveillon das Tintas 2025",
+      thumb_url: require("../assets/img/projetos/TSHIRT 50 AN0S AMOSTRA 1.jpg.jpeg"),
+      description: "descri",
+      year: "2025",
+      fundo: "white",
+    },
+    {
+      event: "Reveillon das Tintas 2025",
+      thumb_url: require("../assets/img/projetos/TSHIRT 50 AN0S AMOSTRA 2.jpg.jpeg"),
+      description: "descri",
+      year: "2025",
+      fundo: "white",
+    },
+    {
+      event: "Reveillon das Tintas 2025",
+      thumb_url: require("../assets/img/projetos/TSHIRT 50 AN0S AMOSTRA 4.jpg.jpeg"),
+      description: "descri",
+      year: "2025",
+      fundo: "white",
+    },
   ]);
   useEffect(() => {
     document.title = "2M Produções | Nosso Trabalho";
@@ -80,10 +101,10 @@ export default function Works() {
       <div className={style.container}>
         <h1>Veje nossos trabalhos recentes</h1>
         <div className={style.works}>
-          {works.toReversed().map((work) => {
+          {works.toReversed().map((work,index) => {
             return (
               <Card
-                // index={index}
+                key={index}
                 desc={work.description}
                 image={work.thumb_url}
                 event={work.event}

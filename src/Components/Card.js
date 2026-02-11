@@ -9,18 +9,17 @@ export const Card = ({ image, desc, event, year, index, fundo }) => {
     >
       <img
         src={image}
-        alt=""
+        alt="logotipo branco do cabeçario da empresa 2m produções"
         draggable={false}
         onContextMenu={(e) => e.preventDefault()}
       />
-      <div
+      {/* <div
         className={`${style.info} ${fundo === "black" ? "white" : "black"}`}
         style={{ color: fundo === "black" ? "white" : "black" }}
       >
         <h3>{event}</h3>
-        {/* <p>{desc}</p> */}
         <p className={style.year}>{year}</p>
-      </div>
+      </div> */}
     </div>
   );
 };

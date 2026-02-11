@@ -1,5 +1,5 @@
 ﻿import style from "./Footer.module.css";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/logo branco.png";
 
 export default function Footer() {
   return (

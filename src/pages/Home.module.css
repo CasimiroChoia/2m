@@ -75,22 +75,11 @@
 .card {
   animation: appear .8s ease-in-out 0s 1 backwards;
 }
-/*
-.card:nth-child(2) {
-  animation: appear 3.3s ease-in-out 3.3s 1 backwards;
+
+.section{
+  max-width: 700px;
+  margin: auto;
 }
-.card:nth-child(3) {
-  animation: appear 3.3s ease-in-out 6.3s 1 backwards;
-}
-.card:nth-child(4) {
-  animation: appear 3.3s ease-in-out 9.3s 1 backwards;
-}
-.card:nth-child(5) {
-  animation: appear 3.3s ease-in-out 12.3s 1 backwards;
-}
-.card:nth-child(6) {
-  animation: appear 3.3s ease-in-out 15.3s 1 backwards;
-} */
 
 @media (max-width: 450px) {
   .banner {

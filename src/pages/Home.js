@@ -9,8 +9,9 @@ import refresh from "../assets/img/003-refresh.png";
 import checklist from "../assets/img/004-checklist.png";
 import price from "../assets/img/002-best-price.png";
 import banner from "../assets/img/banners/banner1.jpg";
-import visitCard from "../assets/img/cards/003-visitCard.jpg";
+import visitCard from "../assets/img/cards/card_2m_2.png";
 import { useEffect } from "react";
+import { carimbo1, carimbo2 } from "../Components/Constants";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -30,13 +31,16 @@ export default function Home() {
             <Button
               text="conheça nossos serviços"
               onClick={() =>
-                navigate("/2m/services", { relative: true, viewTransition: true })
+                navigate("/2m/services", {
+                  relative: true,
+                  viewTransition: true,
+                })
               }
             />
           </span>
         </div>
         {/* Primeira Secção */}
-        <div>
+        <section className={style.section}>
           <h2>Porquê escolher a 2M Produções</h2>
           <p>
             Oferecemos a quantidade perfeita de qualidade, velocidade e preço
@@ -65,10 +69,10 @@ export default function Home() {
               resultados impecáveis
             </p>
           </div>
-        </div>
+        </section>
 
         {/* Segunda Secção */}
-        <div>
+        <section className={style.section}>
           <h2>Nossos Serviços Principais</h2>
           <div className={`${style.serviceCard} ${style.card}`}>
             <img src={visitCard} alt="imagem" />
@@ -93,7 +97,15 @@ export default function Home() {
               qualidade final
             </p>
           </div>
-        </div>
+          <div className={`${style.serviceCard} ${style.card}`}>
+            <img src={carimbo2} alt="imagem" />
+            <h3>Carimbos</h3>
+            <p>
+              Registre a marca da sua empresa instantaneamente com os carimbos
+              da 2M
+            </p>
+          </div>
+        </section>
 
         {/* Terceira Secção */}
         <div

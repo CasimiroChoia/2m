@@ -1,4 +1,4 @@
-import logo from './assets/img/logo.png';
+import logo from './assets/img/logo branco.png';
 import style from './App.module.css';
 import { useNavigate } from 'react-router-dom';
 // import Button from './Components/Button';

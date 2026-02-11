@@ -6,7 +6,7 @@ import style from "./Contact.module.css";
 import whatsapp from "../assets/img/002-whatsapp-1.png";
 import facebook from "../assets/img/004-facebook-1.png";
 import instagram from "../assets/img/006-instagram-1.png";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Contact() {
@@ -14,7 +14,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const email = "2mproducoes.ao@gmail.com"
+  const email = "2mproducoes.ao@gmail.com";
 
   useEffect(() => {
     document.title = "2M Produções | Contacte Nos";
@@ -33,15 +33,6 @@ export default function Contact() {
           className={style.form}
           onSubmit={(e) => {
             e.preventDefault();
-            /*
-              setTimeout(() => {
-              alert("O seu Formulário foi enviado com Sucesso Sr. " + name);
-	      setMessage("")
-	      setName("")
-	      setPhone("")
-            }, 3 * 1000);
-
-            */
           }}
         >
           <h3>Envie sua mensagem</h3>
@@ -71,11 +62,13 @@ export default function Contact() {
             name="message"
             value={message}
             onInput={(e) => setMessage(e.target.value)}
-    
             required
           ></textarea>
 
-          <Button text="enviar" href={`mailto:${email}?subject=${"Email de "+name+" Vinda Do Site"}&body=${message}`} />
+          <Button
+            text="enviar"
+            href={`mailto:${email}?subject=${"Email de " + (name || "Usuer") + " vinda do site"}&body=${(message || "Escreva Sua mensagem de texto aqui")}`}
+          />
         </form>
 
         <div className={style.secondDiv}>
@@ -92,9 +85,7 @@ export default function Contact() {
                   src={facebook}
                   alt="icon do facebook"
                   onClick={() =>
-                    navigate(
-                      "https://www.facebook.com/2mproducoes.ao"
-                    )
+                    navigate("https://www.facebook.com/2mproducoes.ao")
                   }
                 />
                 <span>
@@ -116,9 +107,7 @@ export default function Contact() {
                   src={instagram}
                   alt="icon do instagram"
                   onClick={() =>
-                    navigate(
-                      "https://www.instagram.com/2mproducoes.ao"
-                    )
+                    navigate("https://www.instagram.com/2mproducoes.ao")
                   }
                 />
                 <span>

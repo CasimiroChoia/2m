@@ -1,15 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import style from "./Budge.module.css";
-import logo from "./tabela.png"
+import logo from "../assets/img/tabela de precos - site.jpeg";
 
 export default function Budge() {
+  const [isLoadingImage, setIsLoadingImage] = useState(true);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     document.title = "2M Produções | Escolha o seu Orçamento";
   }, []);
-// #region Antiga Tabela variaveis
+  // #region Antiga Tabela variaveis
   // const installTable = [
   //   {
   //     id: 1,
@@ -356,7 +357,7 @@ export default function Budge() {
   // console.table(Object.keys(printTable[0]));
   // console.table(designTable);
   // console.table(installTable);
-// #endregion
+  // #endregion
   return (
     <div>
       <Header />
@@ -364,8 +365,16 @@ export default function Budge() {
         <h1>Nossos de Preços</h1>
 
         <div>
-          <img src={logo} alt="Logotipo 2M" className={style.logo}/>
+          {isLoadingImage && <p>Processando imagem...</p>}
+          <img
+            onLoadStart={() => setIsLoadingImage(true)}
+            onLoad={() => setIsLoadingImage(false)}
+            src={logo}
+            alt="Logotipo 2M"
+            className={style.logo}
+          />
         </div>
+
         {/* Tabela dos preços de instalação */}
         {/* <section>
           <table>
